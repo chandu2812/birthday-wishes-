@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday!</title>
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="fireworks"></canvas>
+
+  <div class="container">
+  <h1 id="greeting">🎂 Happy Birthday, Friend! 🎂</h1>
+<input type="text" id="nameInput" placeholder="Enter your name" oninput="updateName()" />
+
+
+   <!--<input type="text" id="nameInput" placeholder="Enter your name" oninput="updateName()" /> -->
+    <input type="file" accept="image/*" onchange="showImage(event)" />
+    <img id="uploadedImage" src="" alt="Your Uploaded Image" />
+
+    <button id="surpriseBtn" onclick="showSurprise()">Click for Surprise</button>
+
+    <div class="popup" id="popup">
+      <p>🎁 You're awesome! Hope your birthday is as special as you are! 🎈</p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+
+    <p id="quote"></p>
+
+    <audio autoplay loop>
+      <source src="Happy-Birthday.mp3" type="audio/mpeg" />
+    </audio>
+  </div>
+
+  <script src="fireworks.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
